@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Selected floor background: full green -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    
+    <!-- Full green background for selected floors -->
+    <solid android:color="@color/becomap_primary" />
+    
+    <!-- Ensure perfect circle -->
+    <size 
+        android:width="40dp" 
+        android:height="40dp" />
+        
+</shape>

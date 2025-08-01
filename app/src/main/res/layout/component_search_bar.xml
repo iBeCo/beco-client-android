@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchContainer"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@drawable/search_bar_background"
+    android:elevation="8dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <!-- Search Icon -->
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_search"
+        android:contentDescription="Search"
+        app:tint="@color/text_secondary" />
+
+    <!-- Search Input -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:hint="Search..."
+        android:textColorHint="@color/text_secondary"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:maxLines="1" />
+
+    <!-- Speech Icon (Right side) -->
+    <ImageView
+        android:id="@+id/speechIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/speech_icon_background"
+        android:src="@drawable/ic_mic"
+        android:contentDescription="Voice Search"
+        android:padding="6dp"
+        app:tint="@android:color/white" />
+
+</LinearLayout>

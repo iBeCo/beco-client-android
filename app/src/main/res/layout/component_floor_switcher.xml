@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floorSelectorContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="32dp"
+    android:background="@drawable/floor_selector_background"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:visibility="gone">
+
+    <!-- Floor List (Initially collapsed, vertical) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/floorRecyclerView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!-- Selected Floor Display (Wider for long names) -->
+    <LinearLayout
+        android:id="@+id/selectedFloorContainer"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:background="@drawable/selected_floor_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selectedFloorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Parking"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+    </LinearLayout>
+
+</LinearLayout>

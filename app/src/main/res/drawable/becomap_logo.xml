@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="@color/becomap_primary"
+        android:pathData="M60,10A50,50 0 1,1 10,60A50,50 0 0,1 60,10Z" />
+    
+    <!-- Map Pin Icon -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M60,25C52.27,25 46,31.27 46,39C46,50 60,75 60,75S74,50 74,39C74,31.27 67.73,25 60,25ZM60,44C57.24,44 55,41.76 55,39C55,36.24 57.24,34 60,34C62.76,34 65,36.24 65,39C65,41.76 62.76,44 60,44Z" />
+    
+    <!-- Navigation Lines -->
+    <path
+        android:fillColor="@android:color/white"
+        android:fillAlpha="0.7"
+        android:pathData="M30,85L90,85M35,90L85,90M40,95L80,95"
+        android:strokeWidth="2"
+        android:strokeColor="@android:color/white"
+        android:strokeAlpha="0.7" />
+</vector>

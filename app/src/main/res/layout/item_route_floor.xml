@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/floorNameText"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/circular_floor_background"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+</FrameLayout>

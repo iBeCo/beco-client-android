@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BecoDemo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Becomap Brand Colors -->
+        <item name="colorPrimary">@color/becomap_primary</item>
+        <item name="colorPrimaryVariant">@color/becomap_primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/becomap_primary_light</item>
+    </style>
+
+    <style name="Theme.BecoDemo" parent="Base.Theme.BecoDemo" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.BecoDemo.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@mipmap/splash_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>
